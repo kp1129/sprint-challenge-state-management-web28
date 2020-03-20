@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from './Header';
+import SmurfsContainer from './SmurfsContainer';
 import "./App.css";
 
 
@@ -9,7 +10,7 @@ const App = () => {
       <div className="App">
         <Header />
 
-        {/* list of smurfs */}
+        <SmurfsContainer />
 
         {/* addSmurf form */}
       </div>
