@@ -22,7 +22,7 @@ export const updateData = (data) => dispatch => {
 
 export const postData = (smurf) => dispatch => {
     axios.post("http://localhost:3333/smurfs", smurf)
-    .then(res => {
+    .then(res => {        
         dispatch({ type: UPDATE_DATA, payload: res.data})
     })
     .catch(err => {

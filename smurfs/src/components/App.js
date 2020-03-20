@@ -1,22 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from './Header';
 import SmurfsContainer from './SmurfsContainer';
 import AddSmurfForm from './AddSmurfForm';
 import "./App.css";
 
 
-const App = () => {
- 
+const App = () => { 
     return (
       <div className="App">
         <Header />
-
-        <SmurfsContainer />
-
         <AddSmurfForm />
+        <SmurfsContainer />        
       </div>
-    );
-  
+    );  
 }
 
 export default App;

@@ -15,7 +15,7 @@ export const smurfsReducer = (state = initialState, action) => {
             return {
                 ...state,
                 smurfs: action.payload,
-                message: "Yay, Smurfs! Add more!"
+                message: "Add more Smurfs!"
             }
         case FETCHING_DATA:
             return {
