@@ -22,6 +22,11 @@ export const smurfsReducer = (state = initialState, action) => {
                 ...state,
                 message: "Loading..."
             }
+        case ERROR_HAPPENED:
+            return {
+                ...state,
+                message: "Oops, something went wrong"
+            }    
 
         default:
             return state;

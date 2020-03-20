@@ -19,3 +19,13 @@ export const fetchingData = () => dispatch => {
 export const updateData = (data) => dispatch => {
     dispatch({ type: UPDATE_DATA, payload: data });
 }
+
+export const postData = (smurf) => dispatch => {
+    axios.post("http://localhost:3333/smurfs", smurf)
+    .then(res => {
+        dispatch({ type: UPDATE_DATA, payload: res.data})
+    })
+    .catch(err => {
+        dispatch({ type: ERROR_HAPPENED})
+    })
+}
